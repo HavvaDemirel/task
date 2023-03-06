@@ -35,7 +35,7 @@ public class loginPage {
     @FindBy(xpath = "//h2[.='Login to your account']")
     public WebElement loginToYourAccount;
 
-    @FindBy(xpath = "//h2[@class='title text-center']")
+    @FindBy(tagName = "h2")
     public WebElement accountDeleteText;
 
     @FindBy(xpath = "//a[.='Continue']")
