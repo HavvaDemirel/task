@@ -1,15 +1,18 @@
 package automationExercise.step_definitions;
 
-import automationExercise.pages.loginPage;
+import automationExercise.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 
 public class TC3_StepDefinitions {
-    loginPage logInPage;
+    LoginPage logInPage;
 
-
+    @Then("user should see Login to your account page")
+    public void user_should_see_login_to_your_account_page() {
+        Assert.assertTrue(logInPage.loginToYourAccountText.isDisplayed());
+    }
 
     @When("user enter invalid email and password")
     public void user_enter_invalid_email_and_password() {

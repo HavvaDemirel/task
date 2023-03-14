@@ -1,6 +1,6 @@
 Feature: testing deleting account function
 
-  @second
+  @TC2
   Scenario: verify user can delete account
 
     Given user on the home page of Automation exercise

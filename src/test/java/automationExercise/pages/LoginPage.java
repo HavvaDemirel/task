@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPage {
-    public loginPage() {
+public class LoginPage {
+    public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
@@ -32,8 +32,9 @@ public class loginPage {
     @FindBy(xpath = "/html/body/header/div/div/div/div[2]/div/ul/li[5]/a")
     public WebElement deleteAccount;
 
-    @FindBy(xpath = "//h2[.='Login to your account']")
+    @FindBy(tagName = "h2")
     public WebElement loginToYourAccount;
+
 
     @FindBy(tagName = "h2")
     public WebElement accountDeleteText;
@@ -46,4 +47,7 @@ public class loginPage {
 
     @FindBy(xpath = "//i[@class='fa fa-lock']")
     public WebElement LogOutButton;
+
+    @FindBy(xpath = "//h2[.=\"Login to your account\"]")
+    public WebElement loginToYourAccountText;
 }

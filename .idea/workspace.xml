@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5957dcd8-cdbd-44b1-abcf-641be7372132" name="Changes" comment="mytask">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/hooks.java" afterDir="false" />
+    <list default="true" id="5957dcd8-cdbd-44b1-abcf-641be7372132" name="Changes" comment="TC4 is done">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EU10-CucumberJunit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/configuration.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/loginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationExercise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC5_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC1.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1_StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2_StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3_StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4_StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC3.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC3.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC4.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC4.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC5.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC5.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +74,7 @@
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC4.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Task" />
+      <module name="AutomationExercise" />
       <option name="NAME_FILTER" value="^Login and Logout$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login and Logout$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Login and Logout" />
@@ -103,7 +93,7 @@
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC5.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Task" />
+      <module name="AutomationExercise" />
       <option name="NAME_FILTER" value="^Sign up with an existing email address$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Sign up with an existing email address$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Sign up with an existing email address" />
@@ -118,14 +108,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: positive login scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: verify user can delete account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC2.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Task" />
-      <option name="NAME_FILTER" value="^positive login scenario$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^positive login scenario$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: positive login scenario" />
+      <module name="AutomationExercise" />
+      <option name="NAME_FILTER" value="^verify user can delete account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify user can delete account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: verify user can delete account" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +132,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC1.feature" />
       <option name="GLUE" value="automationExercise.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Task" />
+      <module name="AutomationExercise" />
       <option name="NAME_FILTER" value="^verify user can register$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify user can register$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: verify user can register" />
@@ -158,7 +148,7 @@
       </method>
     </configuration>
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Task" />
+      <module name="AutomationExercise" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="automationExercise.runners.*" />
@@ -188,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: verify user can delete account" />
         <item itemvalue="Cucumber Java.Scenario: verify user can register" />
         <item itemvalue="Cucumber Java.Scenario: Sign up with an existing email address" />
         <item itemvalue="Cucumber Java.Scenario: Login and Logout" />
-        <item itemvalue="Cucumber Java.Scenario: positive login scenario" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +204,12 @@
       <workItem from="1677946510690" duration="841000" />
       <workItem from="1678031725143" duration="3659000" />
       <workItem from="1678127879331" duration="1542000" />
-      <workItem from="1678129448156" duration="794000" />
+      <workItem from="1678129448156" duration="1605000" />
+      <workItem from="1678137370996" duration="3805000" />
+      <workItem from="1678141614107" duration="1141000" />
+      <workItem from="1678485254509" duration="21000" />
+      <workItem from="1678490594015" duration="23000" />
+      <workItem from="1678743122481" duration="3695000" />
     </task>
     <task id="LOCAL-00001" summary="task">
       <created>1677880069316</created>
@@ -237,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677941349005</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TC4 is done">
+      <created>1678130621373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678130621373</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +248,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task" />
     <MESSAGE value="mytask" />
-    <option name="LAST_COMMIT_MESSAGE" value="mytask" />
+    <MESSAGE value="TC4 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="TC4 is done" />
   </component>
 </project>

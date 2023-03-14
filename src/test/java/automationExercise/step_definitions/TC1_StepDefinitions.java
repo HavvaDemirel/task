@@ -1,7 +1,7 @@
 package automationExercise.step_definitions;
 
 import automationExercise.pages.RegisterUserPage;
-import automationExercise.pages.loginPage;
+import automationExercise.pages.LoginPage;
 import automationExercise.utilities.BrowserUtils;
 import automationExercise.utilities.Driver;
 import com.github.javafaker.Faker;
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 public class TC1_StepDefinitions {
     RegisterUserPage registerUserPage;
     Faker faker = new Faker();
-    loginPage logInPage;
+    LoginPage logInPage;
 
 
    @Given("user on the home page of Automation exercise")
@@ -181,6 +181,10 @@ public class TC1_StepDefinitions {
 
         registerUserPage.accountCreatedContinueButton.click();
 
+
     }
+
+
+
 
 }

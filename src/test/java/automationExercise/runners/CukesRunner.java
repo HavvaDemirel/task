@@ -11,12 +11,12 @@ import org.junit.runner.RunWith;
                     //"pretty",
                     "html:target/cucumber-report.html",
                     "rerun:target/anyName.txt",
-                    "me.jvt.cucumber.report.PrettyReports:target/cucumber",//
+                    "me.jvt.cucumber.report.PrettyReports:target/cucumber",
             },
             features = "src/test/resources/features",
             glue = "automationExercise/step_definitions",
             dryRun = false,
-            tags = "@TC3",
+            tags = "@TC1",
             publish = false
 
     )
