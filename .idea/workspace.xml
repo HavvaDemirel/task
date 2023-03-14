@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5957dcd8-cdbd-44b1-abcf-641be7372132" name="Changes" comment="TC4 is done">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationExercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC1_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC2_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC3_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationExercise/step_definitions/TC4_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TC4.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TC4.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/AutomationGetInTouchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/AutomationPracticePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationExercise/pages/AutomationPracticePage2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +201,7 @@
       <workItem from="1678485254509" duration="21000" />
       <workItem from="1678490594015" duration="23000" />
       <workItem from="1678743122481" duration="3695000" />
+      <workItem from="1678751983323" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="task">
       <created>1677880069316</created>
@@ -239,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678130621373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TC4 is done">
+      <created>1678752088466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678752088466</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
