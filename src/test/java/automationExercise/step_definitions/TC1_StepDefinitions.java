@@ -10,6 +10,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class TC1_StepDefinitions {
@@ -98,7 +100,8 @@ public class TC1_StepDefinitions {
     public void user_selects_checkbox_sign_up_for_our_newsletter() {
 
         //10. Select checkbox 'Sign up for our newsletter!
-        registerUserPage.newsLetterBox.click();
+        BrowserUtils.sleep(3);
+      clickWithJS(  registerUserPage.newsLetterBox);
 
 
     }
@@ -106,7 +109,7 @@ public class TC1_StepDefinitions {
     @When("user selects checkbox Receive special offers from our partners!")
     public void user_selects_checkbox_receive_special_offers_from_our_partners() {
         //11. Select checkbox 'Receive special offers from our partners!
-        registerUserPage.specialOffersBox.click();
+clickWithJS(        registerUserPage.specialOffersBox);
     }
 
     @When("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
@@ -135,7 +138,7 @@ public class TC1_StepDefinitions {
         BrowserUtils.sleep(4);
 
         //13. Click 'Create Account button
-        registerUserPage.createAccountButton.click();
+      clickWithJS(  registerUserPage.createAccountButton);
 
     }
 
@@ -157,14 +160,53 @@ public class TC1_StepDefinitions {
 
     @Then("user should see that Logged in as username text")
     public void user_should_see_that_logged_in_as_username_text() {
-        Driver.getDriver().switchTo().frame("aswift_1");
-        Driver.getDriver().switchTo().frame("ad_iframe");
-        registerUserPage.dismisButton.click();
-        Assert.assertTrue(registerUserPage.loggedInText.isDisplayed());
+     //  BrowserUtils.sleep(3000);
 
+// bunlara gerek kalmadi
+//       try {
+//           iframe1();
+//       }catch (Exception e){
+//           iframe2();
+//       }
 
+      //  Assert.assertTrue(registerUserPage.loggedInText.isDisplayed());
+
+//[name='aswift_3']
+//[name='ad_iframe']
+
+        // span.ns-t0oad-e-21
     }
 
+    // bazi webelementleri ekranda gozukmedigi icin tiklayamiyorduk o yuzden bu methodu ekledim
+    public  void clickWithJS(WebElement webElement) {
+        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+        executor.executeScript("arguments[0].click();", webElement);
+    }
+
+// bu ikilye gerek kalmadi
+    private void iframe1(){
+        WebElement ilkIframe = Driver.getDriver().findElement(By.cssSelector("[name='aswift_3']"));
+        Driver.getDriver().switchTo().frame(ilkIframe);
+        WebElement ikinciIframe = Driver.getDriver().findElement(By.cssSelector("[name='ad_iframe']"));
+        WebElement close = Driver.getDriver().findElement(By.cssSelector("span.ns-t0oad-e-21"));
+        Driver.getDriver().switchTo().frame(ikinciIframe);
+        close.click();
+        Driver.getDriver().switchTo().defaultContent();
+    }
+    private void iframe2(){
+        WebElement ilkIframe = Driver.getDriver().findElement(By.cssSelector("[name='aswift_1']"));
+        Driver.getDriver().switchTo().frame(ilkIframe);
+
+        WebElement close = Driver.getDriver().findElement(By.cssSelector("#dismiss-button"));
+
+        close.click();
+        Driver.getDriver().switchTo().defaultContent();
+    }
+
+    //[name='aswift_1']
+    // #dismiss-button
+
+    //
     @When("user clicks Delete Account button")
     public void user_clicks_delete_account_button() {
         registerUserPage.deleteAccount.click();

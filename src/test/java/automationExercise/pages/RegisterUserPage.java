@@ -113,7 +113,7 @@ public class RegisterUserPage {
     @FindBy(xpath = "//i[.=' Logged in as ']")
     public WebElement loggedInText;
 
-    @FindBy(partialLinkText = "delete")
+    @FindBy(css = "[href='/delete_account']")
     public WebElement deleteAccount;
 
 

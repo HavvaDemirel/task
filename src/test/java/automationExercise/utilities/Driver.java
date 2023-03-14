@@ -3,6 +3,7 @@ package automationExercise.utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -10,6 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +21,8 @@ public class Driver {
 Creating a private constructor, so we are closing
 access to the object of this class from outside the class
  */
-    private Driver(){}
+    private Driver() {
+    }
 
     /*
     We make WebDriver private, because we want to close access from outside the class.
@@ -32,9 +35,9 @@ access to the object of this class from outside the class
     /*
     Create a re-usable utility method which will return same driver instance when we call it
      */
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if (driverPool.get() == null){
+        if (driverPool.get() == null) {
 
             /*
             We read our browserType from configuration.properties.
@@ -47,11 +50,32 @@ access to the object of this class from outside the class
                 Depending on the browserType that will be return from configuration.properties file
                 switch statement will determine the case, and open the matching browser
             */
-            switch (browserType){
+            switch (browserType) {
                 case "chrome":
+                    ChromeOptions chromeOptions = new ChromeOptions();
 
+                    // https://community.lambdatest.com/t/remove-ads-in-automated-tests/6431/2
+                    // javascript destegini kapatarak cok saglikli bir is yapmis olmadim aslinda ama sorunu kokten halletti
+                    Map<String, Object> prefs = new HashMap<>();
+                    prefs.put("profile.managed_default_content_settings.javascript", 2);
+                    chromeOptions.setExperimentalOption("prefs", prefs);
+
+                    // burada benim projede kullandigim argumentler var ihtiyaca gore acilip kullanilabilir
+//                    chromeOptions.addArguments("--disable-notifications");
+//                    chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList(
+//                            "disable-popup-blocking",
+//                            "disable-extensions"
+//                    ));
+//                    chromeOptions.addArguments("use-fake-ui-for-media-stream");
+//                    chromeOptions.addArguments("--disable-gpu");
+//                    //  chromeOptions.addArguments("--headless");
+//                    chromeOptions.addArguments("--window-size=1920,1080");
+//                    chromeOptions.addArguments("--disable-extensions");
+//                    chromeOptions.addArguments("--disable-popup-blocking");
+//                    chromeOptions.addArguments("--no-sandbox");
+//                    chromeOptions.addArguments("--disable-dev-shm-usage");
                     WebDriverManager.chromedriver().setup();
-                    driverPool.set(new ChromeDriver());
+                    driverPool.set(new ChromeDriver(chromeOptions));
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
@@ -65,10 +89,10 @@ access to the object of this class from outside the class
                     // assign your grid server address
                     String gridAdress = "54.89.242.106"; // put your own Linux grid IP here
                     try {
-                        URL url = new URL("http://"+gridAdress+":4444/wd/hub");
+                        URL url = new URL("http://" + gridAdress + ":4444/wd/hub");
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
-                        driverPool.set(new RemoteWebDriver(url,desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(url, desiredCapabilities));
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     } catch (MalformedURLException e) {
@@ -76,14 +100,14 @@ access to the object of this class from outside the class
                     }
                     break;
                 case "saucelab-chrome":
-                    try{
+                    try {
                         URL url = new URL("https://oauth-sdetoscar-844c8:66e7117f-390e-4556-8105-07af96a01f7a@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
-                        driverPool.set(new RemoteWebDriver(url,desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(url, desiredCapabilities));
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                    }catch (MalformedURLException e){
+                    } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
 
@@ -100,7 +124,7 @@ access to the object of this class from outside the class
                     URL url = null;
                     try {
                         url = new URL("https://oauth-sdetoscar-844c8:66e7117f-390e-4556-8105-07af96a01f7a@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
-                        driverPool.set(new RemoteWebDriver(url,browserOptions));
+                        driverPool.set(new RemoteWebDriver(url, browserOptions));
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     } catch (MalformedURLException e) {
@@ -119,8 +143,8 @@ access to the object of this class from outside the class
     /*
     This method will make sure our driver value is always null after using quit() method
      */
-    public static void closeDriver(){
-        if (driverPool.get() != null){
+    public static void closeDriver() {
+        if (driverPool.get() != null) {
             driverPool.get().quit(); // this line will terminate the existing session. value will not even be null
             driverPool.remove();
         }
