@@ -61,6 +61,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="task" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="task" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Login and Logout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC4.feature" />
@@ -149,19 +162,6 @@
       <option name="PACKAGE_NAME" value="automationExercise.runners" />
       <option name="MAIN_CLASS_NAME" value="automationExercise.runners.CukesRunner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="task" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="task" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
